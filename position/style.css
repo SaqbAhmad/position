@@ -1,0 +1,36 @@
+div{
+    width: 150px;
+    height:150px;
+    border:3px solid black;
+    display:inline-block;
+}
+/* */
+#static #middle{
+     position: static; /*when the position is static offset will not work */
+    top:20px;
+    left:40px;
+    right:60px;
+    bottom:200px;
+}
+/* Relative position me element initial position ke according offset leta hai */
+#relative #middle{
+    position:relative;
+    top:30px;
+    left:40px;
+}
+/* #absolute krne pr section select ho jaega. */
+#absolute{
+    position:relative;
+    border: 5px solid black;
+}
+/* absolute me offset according to its ancestor lega */
+#absolute #middle{
+    position:absolute;
+    top:40px; 
+     left:20px; 
+}
+#Fixed #middle{
+     position:fixed;
+     top:10px;
+}
+k
